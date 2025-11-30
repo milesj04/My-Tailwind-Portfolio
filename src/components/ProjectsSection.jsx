@@ -56,7 +56,7 @@ const projects = [
         title: "Poker Game",
         description: "Poker game that is playable with up to 4 people or vs AI.",
         image: "/Projects/CProjects/Poker.jpg",
-        tags: ["RaspberryPi", "Python", "Frontend/Backend"],
+        tags: ["C", "Linux", "Git", "Frontend/Backend"],
         demoURL: Pokerpdf,
         githubURL: "#",
         videoURL: "#",
@@ -104,11 +104,11 @@ export const ProjectsSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((projects, key) => (
-                        <div key={key} className="group bg-card rounded-lg overflow-hidden shaddow-xs card-hover">
+                        <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col h-full">
                             <div className="aspect-[4/3] overflow-hidden bg-black/10 flex items-center justify-center ">
                                 <img src={projects.image} alt={projects.title} className="w-full h-full object-contain"/>    
                         </div>
-                            <div className="p-6">
+                            <div className="p-6 flex flex-col flex-grow">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {projects.tags.map((tag) => (
                                         <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
@@ -118,7 +118,7 @@ export const ProjectsSection = () => {
                                 </div>
                             <h3 className="text-xl font-semibold mb-1">{projects.title}</h3>
                             <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center mt-auto">
                                 <div className="flex space-x-3">
                                     <a href={projects.demoURL} 
                                         target="_blank"
