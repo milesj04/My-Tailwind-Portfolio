@@ -85,7 +85,7 @@ export const ContactSection = () => {
                     </div>
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6">
-                            Send a Message! (Currently doesn't work as I would have to pay for email API)
+                            Send a Message!
                         </h3>
                         <form className="space-y-6">
                             <div>
@@ -97,7 +97,7 @@ export const ContactSection = () => {
                                 name="name"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                placeholder="John Doe..."   >
+                                placeholder="John Doe"   >
                                 </input>
                             </div>
                             <div>
@@ -121,7 +121,7 @@ export const ContactSection = () => {
                                 name="message"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                placeholder="Hello, I'd like to talk about..."   >
+                                placeholder="<This function doesn't work yet. Need to purchase and email API...SORRY!>">
                                 </textarea>
                             </div>
                             <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
