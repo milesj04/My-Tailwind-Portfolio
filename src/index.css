@@ -19,7 +19,7 @@
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-fade-in-delay-5: fade-in 0.7s ease-out 1s forwards;
   --animate-meteor: meteor 5s linear infinite;
-  --animate-fade-cycle: fade-cycle 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  --animate-fade-cycle: fade-cycle 12s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
 
   @keyframes fade-cycle {
   0%   { opacity: 0; }
@@ -148,7 +148,7 @@
 @utility fade-img {
   @apply absolute inset-0 w-full h-full rounded-3xl object-cover;
   opacity: 0;
-  animation: fade-cycle 12s ease-in-out infinite;
+  animation: fade-cycle 8s ease-in-out infinite;
 }
 
 @utility fade-delay-0 {
@@ -161,6 +161,15 @@
 
 @utility fade-delay-8 {
   animation-delay: 8s;
+}
+
+@utility text-gradient-outline {
+  color: white;
+  text-shadow:
+    0 0 4px rgba(167, 139, 250, 0.8),
+    0 0 8px rgba(139, 92, 246, 0.8),
+    0 0 12px rgba(139, 92, 246, 0.6),
+    0 0 20px rgba(139, 92, 246, 0.4);
 }
 
 #root {

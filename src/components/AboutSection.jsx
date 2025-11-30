@@ -1,7 +1,7 @@
 import { Briefcase, Code, Hammer, User } from "lucide-react";
 import Resume_HW from "@/assets/CVs/Miles__Resume_HW.pdf";
 import Resume_SW from "@/assets/CVs/Miles__Resume_SW.pdf";
-import Headshot from "@/assets/Headshots/MilesHeadShot-Hyper.jpg";
+import RunClub from "@/assets/Headshots/thumbnail_runclub.jpg";
 import HyperTeamPhoto from "@/assets/Headshots/HX11TeamPhotoFinal.jpg";
 import InternGroupPhoto from "@/assets/Headshots/intern group pic.jfif";
 
@@ -100,9 +100,8 @@ export const AboutSection = () => {
                 {/* fading images BELOW the section */}
                 <div className="relative w-full mt-20 flex justify-center">
                     <div className="w-[90%] max-w-3xl h-[400px]">
-                        <img src={Headshot} className="fade-img fade-delay-0" />
-                        <img src={HyperTeamPhoto} className="fade-img fade-delay-4" />
-                        <img src={InternGroupPhoto} className="fade-img fade-delay-8" />
+                        <img src={HyperTeamPhoto} className="fade-img fade-delay-0" />
+                        <img src={InternGroupPhoto} className="fade-img fade-delay-4" />
                     </div>
                 </div>
             </div>

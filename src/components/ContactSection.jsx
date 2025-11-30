@@ -70,16 +70,16 @@ export const ContactSection = () => {
                         </div>
 
                         <div className="pt-8">
-                            <h4 className="font-medium mb-4">
-                                Connect With Me
+                            <h4 className="font-medium mb-4 text-2xl">
+                                Lets Connect!
                             </h4>
                             <div className="flex space-x-4 justify-center">
                                 <a href="https://www.linkedin.com/in/miles-jennings/" target="_blank">
                                     <Linkedin />
                                 </a>
-                                <a href="https://www.instagram.com/myboy_mj/" target="_blank">
+                                {/* <a href="https://www.instagram.com/myboy_mj/" target="_blank">
                                     <Instagram />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ export const ContactSection = () => {
                                 name="message"
                                 required
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                placeholder="<This function doesn't work yet. Need to purchase and email API...SORRY!>">
+                                placeholder="<This function doesn't work yet. Need to purchase an email API...SORRY!>">
                                 </textarea>
                             </div>
                             <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
