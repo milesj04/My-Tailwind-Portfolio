@@ -1,6 +1,7 @@
 import { Briefcase, Code, Hammer, User } from "lucide-react";
 import Resume_HW from "@/assets/CVs/Miles__Resume_HW.pdf";
 import Resume_SW from "@/assets/CVs/Miles__Resume_SW.pdf";
+import Resume_EE from "@/assets/CVs/Miles__Resume_EE.pdf";
 import RunClub from "@/assets/Headshots/thumbnail_runclub.jpg";
 import HyperTeamPhoto from "@/assets/Headshots/HX11TeamPhotoFinal.jpg";
 import InternGroupPhoto from "@/assets/Headshots/intern group pic.jfif";
@@ -19,16 +20,20 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold"> Passionate Computer Engineer</h3>
                         <p className="text-lg text-muted-foreground">
-                            I’m a Computer Engineering student at the University of California, Irvine, driven by a passion for sustainability, hands-on innovation, 
-                            and purposeful technology. I’ve developed technical experience in both software and hardware, from embedded systems to 
-                            application development.
+                            I recently earned my B.S. in Computer Engineering from the University of California, Irvine, with a focus on embedded systems, 
+                            digital design, and hardware-software integration. My experience spans embedded firmware, PCB design, hardware validation, and 
+                            automated test development, with an emphasis on building reliable systems from concept through testing.
                         </p>
                         <p className="text-lg text-muted-foreground">
-                            Over the past few years, I’ve worked across both industry and student engineering teams. Ranging from designing low-voltage and IT 
-                            infrastructure at P2S Engineering to developing control hardware for the Hyperloop pod at HyperXite. Alongside these roles, 
-                            I’ve built hands-on projects like a gesture-controlled rover, a remote cargo drone, and an audio-reactive wearable. 
-                            These experiences have shaped me as a computer engineer, helping me bridge the gap between hardware and software to build reliable, 
-                            real-world systems.
+                        Most recently, I have been working as a Test Engineer Intern at Leach International, 
+                        where I troubleshoot and repair production test equipment, develop automated Python-based test systems, 
+                        and design hardware solutions that improve manufacturing efficiency. As a Control Systems Engineer with HyperXite, 
+                        I designed custom STM32- and ESP32-based embedded systems, developed a custom Altium PCB for the pod's control system, 
+                        and collaborated across mechanical, electrical, and software teams to ensure reliable power distribution and telemetry. 
+                        My projects include implementing a Verilog-based MIPS processor, transistor-level CMOS circuit design in Cadence, and embedded systems 
+                        involving microcontrollers, real-time communication, and hardware validation. I enjoy solving challenging hardware and software problems 
+                        while building practical engineering solutions that translate into reliable, real-world systems.
+
 
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,6 +44,10 @@ export const AboutSection = () => {
                             <a href={Resume_HW} target="_blank" rel="noopener noreferrer"
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                                 Hardware Resume
+                            </a>
+                            <a href={Resume_EE} target="_blank" rel="noopener noreferrer"
+                                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                                EE Resume
                             </a>
                             <a href={Resume_SW}  target="_blank" rel="noopener noreferrer"
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
