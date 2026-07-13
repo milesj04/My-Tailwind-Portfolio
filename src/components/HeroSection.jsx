@@ -30,9 +30,8 @@ export const HeroSection = () => {
                     </div>
                 </div>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-100 animate-fade-in-delay-1">
-                    From HyperXite’s Hyperloop control system to low-voltage electrical infrastructure design at P2S Engineering, I build systems meant to perform in the real 
-                    world. I thrive on engineering challenges that combine electronics, software, and hands-on problem-solving.
-                    
+                    Recent UC Irvine Computer Engineering graduate focused on creating devices and systems that change the world. I am currently working as a
+                    Test Engineer Intern at Leach International Corp while making embeedded systems, PCB designs, and system integration.
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-5">
                     <a href="#projects" className="cosmic-button">
