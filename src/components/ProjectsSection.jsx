@@ -43,6 +43,50 @@ const projects = [
     },
     {
         id:4,
+        title: "AudioVisor",
+        description: "Audio visualization project with a presentation deck and project image from the projects folder.",
+        image: "/Projects/AudioVisor/real_pic_audiovisor.JPG",
+        tags: ["Audio", "Visualization", "Signals"],
+        demoURL: "/Projects/AudioVisor/AudioVisor.pptx.pdf",
+        githubURL: "#",
+        videoURL: "#",
+
+    },
+    {
+        id:5,
+        title: "Pipeline Processor",
+        description: "Verilog pipeline processor with hazard detection, forwarding, stalling, and control-hazard flushing.",
+        image: "/Projects/VivadoProjects/pipeline_processor_thumbnail.png",
+        tags: ["Verilog", "Vivado", "Pipelining"],
+        demoURL: "/Projects/VivadoProjects/Miles_Jennings_Pipeline_Processor%20(1).pdf",
+        githubURL: "#",
+        videoURL: "#",
+
+    },
+    {
+        id:6,
+        title: "MIPS Processor",
+        description: "Vivado-based MIPS processor project with instruction flow, control logic, and datapath integration.",
+        image: "/Projects/VivadoProjects/MIPS_processor_thumbnail.png",
+        tags: ["Verilog", "Vivado", "MIPS"],
+        demoURL: "/Projects/VivadoProjects/Miles_Jennings_MIPS_Processor%20(1).pdf",
+        githubURL: "#",
+        videoURL: "#",
+
+    },
+    {
+        id:7,
+        title: "HyperXite Control System",
+        description: "Control system project for HyperXite with the project cover and documentation linked below.",
+        image: "/Projects/HyperXite/hyperxite%20cover.png",
+        tags: ["Controls", "Hardware", "Systems"],
+        demoURL: "/Projects/HyperXite/Controls%20-%20HyperXite.pdf",
+        githubURL: "#",
+        videoURL: "#",
+
+    },
+    {
+        id:8,
         title: "Chess Game",
         description: "Chess game that is playable vs a robot or vs another player.",
         image: "/Projects/CProjects/Chess.jpg",
@@ -52,7 +96,7 @@ const projects = [
         videoURL: "#", 
     },
     {
-        id:5,
+        id:9,
         title: "Poker Game",
         description: "Poker game that is playable with up to 4 people or vs AI.",
         image: "/Projects/CProjects/Poker.jpg",
@@ -62,7 +106,7 @@ const projects = [
         videoURL: "#",
     },
     {
-        id:6,
+        id:10,
         title: "Dictionary Application",
         description: "Dictionary application that allows user to import and export words and definitions. Also utilizing logs for most recent/common searches.",
         image: "/Projects/JavaProjects/Dictionary.jpg",
@@ -73,7 +117,7 @@ const projects = [
 
     },
     {
-        id:7,
+        id:11,
         title: "Calculator Application",
         description: "Calculator application that allows for computation as well as other complex functions such as memory computations.",
         image: "/Projects/JavaProjects/Calculator.jpg",
@@ -103,34 +147,34 @@ export const ProjectsSection = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((projects, key) => (
+                    {projects.map((project, key) => (
                         <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col h-full">
                             <div className="aspect-[4/3] overflow-hidden bg-black/10 flex items-center justify-center ">
-                                <img src={projects.image} alt={projects.title} className="w-full h-full object-contain"/>    
+                                <img src={project.image} alt={project.title} className="w-full h-full object-contain"/>    
                         </div>
                             <div className="p-6 flex flex-col flex-grow">
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {projects.tags.map((tag) => (
+                                    {project.tags.map((tag) => (
                                         <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-                            <h3 className="text-xl font-semibold mb-1">{projects.title}</h3>
-                            <p className="text-muted-foreground text-sm mb-4">{projects.description}</p>
+                            <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                            <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-between items-center mt-auto">
                                 <div className="flex space-x-3">
-                                    <a href={projects.demoURL} 
+                                    <a href={project.demoURL} 
                                         target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <ExternalLink size={20} />
                                     </a>
-                                    <a href={projects.githubURL} 
+                                    <a href={project.githubURL} 
                                         target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <Github size={20} />
                                     </a>
-                                    <a href={projects.videoURL} 
+                                    <a href={project.videoURL} 
                                         target="_blank"
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <CirclePlay size={20} />

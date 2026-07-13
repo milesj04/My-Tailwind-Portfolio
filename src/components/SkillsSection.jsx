@@ -4,38 +4,34 @@ import { cn } from "@/lib/utils";
 
 const skills = [
     // Programming Languages
-    { name: "Python", level: 90, category: "languages" },
-    { name: "C/C++", level: 85, category: "languages" },
-    { name: "Java", level: 85, category: "languages" },
-    { name: "Tailwind CSS", level: 60, category: "languages" },
-    { name: "React.js", level: 60, category: "languages" },
-    { name: "Typescript", level: 60, category: "languages" },
-    { name: "Verilog", level: 80, category: "languages" },
-    { name: "RISC-V", level: 70, category: "languages" },
-    { name: "MIPS Assembly", level: 70, category: "languages" },
-    
+    { name: "Python", category: "languages" },
+    { name: "C/C++", category: "languages" },
+    { name: "Java", category: "languages" },
+    { name: "Tailwind CSS", category: "languages" },
+    { name: "React.js", category: "languages" },
+    { name: "Typescript", category: "languages" },
+    { name: "Verilog", category: "languages" },
+    { name: "RISC-V", category: "languages" },
+    { name: "MIPS Assembly", category: "languages" },
 
     // Tools
-    { name: "Git/GitHub", level: 85, category: "tools" },
-    { name: "Arduino", level: 95, category: "tools" },
-    { name: "VS Code", level: 95, category: "tools" },
-    { name: "Linux", level: 85, category: "tools" },
-    { name: "LTSpice", level: 75, category: "tools" },
-    { name: "Cadence", level: 80, category: "tools" },
-    { name: "Vivado", level: 80, category: "tools" },
-    { name: "Revit", level: 95, category: "tools" },
-    { name: "AutoCAD", level: 95, category: "tools" },
-    { name: "BlueBeam", level: 98, category: "tools" },
-    { name: "Figma", level: 75, category: "tools" },
+    { name: "Git/GitHub", category: "tools" },
+    { name: "Arduino", category: "tools" },
+    { name: "VS Code", category: "tools" },
+    { name: "Linux", category: "tools" },
+    { name: "LTSpice", category: "tools" },
+    { name: "Cadence", category: "tools" },
+    { name: "Vivado", category: "tools" },
+    { name: "Revit", category: "tools" },
+    { name: "AutoCAD", category: "tools" },
+    { name: "BlueBeam", category: "tools" },
+    { name: "Figma", category: "tools" },
 
-    
-
-    //Hardware
-    { name: "Oscilloscope", level: 100, category: "hardware" },
-    { name: "Multimeter", level: 100, category: "hardware" },
-    { name: "Microcontrollers", level: 100, category: "hardware" },
-    { name: "Power Supplies", level: 100, category: "hardware" },
-    
+    // Hardware
+    { name: "Oscilloscope", category: "hardware" },
+    { name: "Multimeter", category: "hardware" },
+    { name: "Microcontrollers", category: "hardware" },
+    { name: "Power Supplies", category: "hardware" },
 ];
 
 const categories = ["all", "languages", "tools", "hardware"];
@@ -66,17 +62,11 @@ export const SkillsSection = () => {
             ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {filteredSkills.map((skill, key) => (
-                <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-                    <div className="text-left mb-4">
-                        <h3 className="font-semibold text-lg"> {skill.name} </h3>
-                    </div>
-                    <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden"> 
-                        <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" style={{width: skill.level + "%"}}/>
-                    </div>
-                    <div className="text-right mt-1">
-                        <span> {skill.level}%</span>
+                <div key={key} className="bg-card px-3 py-3 rounded-md border border-border/60 shadow-xs card-hover min-h-0">
+                    <div className="flex h-full items-center justify-center text-center">
+                        <h3 className="text-sm sm:text-[15px] font-semibold leading-tight">{skill.name}</h3>
                     </div>
                 </div>
             ))}

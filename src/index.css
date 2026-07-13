@@ -148,7 +148,7 @@
 @utility fade-img {
   @apply absolute inset-0 w-full h-full rounded-3xl object-cover;
   opacity: 0;
-  animation: fade-cycle 8s ease-in-out infinite;
+  animation: fade-cycle 12s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
 }
 
 @utility fade-delay-0 {

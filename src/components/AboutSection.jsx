@@ -108,9 +108,10 @@ export const AboutSection = () => {
                 </div>
                 {/* fading images BELOW the section */}
                 <div className="relative w-full mt-20 flex justify-center">
-                    <div className="w-[90%] max-w-3xl h-[400px]">
+                    <div className="w-[90%] max-w-3xl h-[500px]">
                         <img src={HyperTeamPhoto} className="fade-img fade-delay-0" />
                         <img src={InternGroupPhoto} className="fade-img fade-delay-4" />
+                        <img src="/Projects/HyperXite/demoday-hx11.jpg" alt="HyperXite demo day" className="fade-img fade-delay-8" />
                     </div>
                 </div>
             </div>
